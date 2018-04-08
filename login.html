@@ -80,7 +80,7 @@
                 <input type="text"     class="login-username" value="usuario">
                 <input type="password" class="login-password" value="password">
                 <div class="one-half">
-                    <a href="index.html" class="button button-green">Iniciar sesión</a>
+                    <a href="index.html" class="button button-green" name="iniciar" id="iniciar">Iniciar sesión</a>
                 </div>
                 <div class="one-half last-column">
                     <a href="pageapp-sigin.html" class="button button-blue">Registrate</a>
@@ -133,5 +133,16 @@
     </div>
 
 </div>
+<script type="text/javascript">
+jQuery(function ($) {
+    $('#iniciar').click(function(){
+        /*Captura de datos escrito en los inputs*/
+        var se = "si"
 
+        /*Guardando los datos en el LocalStorage*/
+        sessionStorage.setItem("se", se);
+
+    });
+});
+</script>
 </body>
