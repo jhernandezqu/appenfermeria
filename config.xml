@@ -80,6 +80,9 @@
     <icon src="images/ios/Icon-App-57x57@2x.png"         gap:platform="ios"        width="114" height="114" />
     <icon src="images/ios/Icon-App-72x72@2x.png"         gap:platform="ios"        width="144" height="144" />
 
+
+
+
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
     </gap:config-file>
@@ -104,12 +107,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
+  
 
 </widget>
